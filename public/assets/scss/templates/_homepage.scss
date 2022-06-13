@@ -1,0 +1,16 @@
+.card{
+    .card-img{
+        width: 23rem;
+        height: 23rem;
+    }
+}
+.Subscribe{
+    padding: 4rem;
+    #subscribe-form{
+        input{
+            height: 5rem;
+            color: #7B7B7B;
+            border: 1px solid $border-color;
+        }
+    }
+}

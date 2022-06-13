@@ -1,0 +1,172 @@
+::selection {
+    background: #999999;
+    color: $white;
+}
+
+/*---Common CSS---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $white;
+    background: #1a191e;
+    padding: 1.5rem 3rem 0;
+}
+
+@media (max-width:991px) {
+    body {
+        padding: 0;
+    }
+}
+
+a,
+button {
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+/*section gap*/
+.mb-6 {
+    margin-bottom: 5rem;
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.bg-color {
+    background: $bg-color;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    color: $white;
+}
+
+p,
+.h1.txt-style,
+.h2.txt-style,
+.h3.txt-style,
+.h4.txt-style,
+.inner-faq-item {
+    color: $p-color;
+}
+
+.border-b {
+    border-bottom: 2px solid $theme-red;
+}
+
+.h1,
+.h3 {
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+/*All Transition Style*/
+.transition-400ms {
+    transition: all ease-in-out .4s;
+}
+
+/*All Hover Effect*/
+.hover-color {
+    &:hover {
+        color: $theme-red !important;
+    }
+}
+
+/*Primary Button*/
+.theme-btn {
+    padding: 1.2rem 2.6rem;
+    margin-top: 2.5rem;
+    background: $theme-red;
+
+    &:hover {
+        color: $bg-color !important;
+    }
+}
+
+/*Social Icons*/
+.list-group {
+    .list-group-link {
+        padding: .75rem 1.25rem;
+    }
+}
+
+/*Search Form*/
+#search-form {
+    height: 5rem;
+
+    .form-control {
+        padding: 0 5rem 0 2rem;
+        color: #7B7B7B;
+    }
+
+    .search__btn {
+        right: 0;
+        transform: translateX(-20%);
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-5px, -50%);
+            width: 1px;
+            height: 3rem;
+            background: $border-color;
+        }
+    }
+}
+
+.table-bordered,
+.table td,
+.table th,
+.table thead th,
+.form-control {
+    border: 1px solid $border-color;
+}
+
+.contact-form {
+    .form-control {
+        color: #737373;
+        resize: none;
+
+        &::placeholder {
+            color: #737373;
+        }
+    }
+}
+
+.select-wrapper{
+    &::after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 28%;
+        right: 3%;
+        color: inherit;
+        pointer-events: none;
+    }
+    &.nav-select-wrapper{
+        &::after{
+            top: 22%;
+            right: 32%;
+        }
+    }
+    .custom-select {
+        background-size: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,37 @@
+/*Blog Section CSS*/
+.card {
+    .meta-list {
+        .icon {
+            color: $theme-red;
+            margin-right: 0.9rem;
+        }
+    }
+}
+
+/*FAQ's List & Items*/
+.faq-list {
+    .faq-item {
+        &::before {
+            position: absolute;
+            transform: translate(-155%, 30%);
+            content: "";
+            padding: 0.75rem;
+            border-radius: 50%;
+            background: $theme-red;
+        }
+
+        .inner-faq-list {
+            counter-reset: number;
+            margin-left: 2rem;
+
+            .inner-faq-item {
+                &::before {
+                    counter-increment: number;
+                    content: counter(number) '.';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

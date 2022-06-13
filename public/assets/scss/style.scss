@@ -1,0 +1,20 @@
+/* 
+------------------
+Template Name: Go-Blog | Personal Blog Theme
+Author: Theme Fisher
+Version: 1.00
+------------------
+*/
+@import "./variable";
+@import "./typography";
+@import "./common";
+@import "./component";
+@import "./navbar";
+@import "./footer";
+@import
+    "./templates/homepage",
+    "./templates/single-blog",
+    "./templates/category",
+    "./templates/about",
+    "./templates/contact",
+    "./templates/privacy";

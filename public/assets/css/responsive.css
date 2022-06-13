@@ -1,0 +1,103 @@
+@media (max-width: 575.98px) {
+  .mb-6 {
+    margin-bottom: 3rem;
+  }
+  .h1, .h2, .card .h1 {
+    line-height: 4rem;
+  }
+  .h1 {
+    font-size: 3rem;
+  }
+  .h2 {
+    font-size: 2.6rem;
+  }
+  .h1.txt-style {
+    font-size: 2.4rem;
+  }
+  .h2.txt-style {
+    font-size: 2.3rem;
+  }
+  .h3.txt-style {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .quote-p {
+    font-size: 2rem;
+  }
+  .card .h1 {
+    margin: 0;
+  }
+  .blockquote {
+    padding: 3rem 5rem;
+  }
+  .faq-list {
+    margin-left: 1.5rem !important;
+  }
+  footer {
+    padding-top: 3rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 9.5px;
+  }
+  .meta-list {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 1.5rem;
+  }
+  .navbar .navbar-brand {
+    width: 13rem;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  .navbar .navbar-collapse .dropdown-menu {
+    left: 43%;
+  }
+  .navbar .navbar-collapse .list-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-navbar {
+    min-height: calc(100vh - 3rem);
+    padding: 1rem 0 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .custom-navbar .navbar-collapse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .custom-navbar .navbar-collapse .navbar-nav {
+    display: block;
+  }
+  .custom-navbar .navbar-collapse .list-group {
+    margin-left: -10px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

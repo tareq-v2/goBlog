@@ -1,0 +1,71 @@
+.blockquote {
+    padding: 4rem 8rem;
+
+    .quote-icon {
+        position: relative;
+
+        &::before,
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            color: $theme-red;
+        }
+
+        &::before {
+            content: "\f10d";
+            top: 0;
+            left: 0;
+            transform: translate(-125%, -50%);
+        }
+
+        &::after {
+            content: "\f10e";
+            bottom: 0;
+            right: 0;
+            transform: translate(100%, 25%);
+        }
+    }
+}
+
+.table {
+    min-width: 430px;
+}
+
+.card-deck {
+    &:nth-of-type(1) {
+        .card {
+            &:nth-child(1) {
+                background: #000000;
+            }
+
+            &:nth-child(2) {
+                background: $theme-red;
+            }
+
+            &:nth-child(4) {
+                background: #333139;
+            }
+        }
+    }
+
+    &:nth-of-type(2) {
+        .card {
+            &:nth-child(1) {
+                background: #f0f0f0;
+            }
+
+            &:nth-child(3) {
+                background: $p-color;
+            }
+
+            &:nth-child(4) {
+                background: #737373;
+            }
+        }
+    }
+
+    .card {
+        padding-top: 12rem;
+    }
+}

@@ -1,0 +1,525 @@
+@charset "UTF-8";
+/* 
+------------------
+Template Name: Go-Blog | Personal Blog Theme
+Author: Theme Fisher
+Version: 1.00
+------------------
+*/
+/*---Typography CSS---*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+h6,
+.custom-select,
+.nav-link,
+.theme-btn {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+p,
+.form-control,
+.label-text,
+.breadcrumb-item,
+.category__link,
+.blockquote-footer,
+.inner-faq-item,
+.h4.txt-style,
+.footer__link {
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+p,
+.form-control {
+  font-weight: 400;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+h6,
+.meta-list,
+.quote-p,
+.custom-select,
+.nav-link,
+.theme-btn,
+.category__link,
+.blockquote-footer {
+  font-weight: 500;
+}
+
+.h2,
+.h3,
+.h1,
+.h4 {
+  letter-spacing: 0.08rem;
+}
+
+.nav-link,
+.theme-btn {
+  letter-spacing: 0.1rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.nav-item,
+.list-group-item {
+  line-height: 4rem;
+}
+
+.nav-item .nav-link,
+.nav-item .custom-select,
+.list-group-item .nav-link,
+.list-group-item .custom-select {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+}
+
+.h1 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+
+.h3,
+.quote-p {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+.quote-p,
+.blockquote-footer {
+  line-height: 3.4rem;
+}
+
+p,
+.inner-faq-item,
+.label-text {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.form-control,
+.h6.txt-style {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+.theme-btn,
+.breadcrumb-item,
+.search__icon,
+.blockquote-footer,
+.h4 {
+  font-size: 1.8rem;
+}
+
+.footer__link,
+.meta-list {
+  font-size: 1.4rem;
+}
+
+.category__link {
+  font-size: 1.3rem;
+}
+
+.h4 {
+  line-height: 2.4rem;
+}
+
+.quote-icon::before,
+.quote-icon::after {
+  font-size: 3.5rem;
+}
+
+::-moz-selection {
+  background: #999999;
+  color: #ffffff;
+}
+
+::selection {
+  background: #999999;
+  color: #ffffff;
+}
+
+/*---Common CSS---*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ffffff;
+  background: #1a191e;
+  padding: 1.5rem 3rem 0;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding: 0;
+  }
+}
+
+a:hover, a:active, a:visited, a:focus,
+button:hover,
+button:active,
+button:visited,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/*section gap*/
+.mb-6 {
+  margin-bottom: 5rem;
+}
+
+.pt-6 {
+  padding-top: 5rem;
+}
+
+.bg-color {
+  background: #1D1C21;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  color: #ffffff;
+}
+
+p,
+.h1.txt-style,
+.h2.txt-style,
+.h3.txt-style,
+.h4.txt-style,
+.inner-faq-item {
+  color: #B0B0B0;
+}
+
+.border-b {
+  border-bottom: 2px solid #E4112F;
+}
+
+.h1,
+.h3 {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+/*All Transition Style*/
+.transition-400ms {
+  -webkit-transition: all ease-in-out .4s;
+  transition: all ease-in-out .4s;
+}
+
+/*All Hover Effect*/
+.hover-color:hover {
+  color: #E4112F !important;
+}
+
+/*Primary Button*/
+.theme-btn {
+  padding: 1.2rem 2.6rem;
+  margin-top: 2.5rem;
+  background: #E4112F;
+}
+
+.theme-btn:hover {
+  color: #1D1C21 !important;
+}
+
+/*Social Icons*/
+.list-group .list-group-link {
+  padding: .75rem 1.25rem;
+}
+
+/*Search Form*/
+#search-form {
+  height: 5rem;
+}
+
+#search-form .form-control {
+  padding: 0 5rem 0 2rem;
+  color: #7B7B7B;
+}
+
+#search-form .search__btn {
+  right: 0;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  cursor: pointer;
+}
+
+#search-form .search__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-5px, -50%);
+          transform: translate(-5px, -50%);
+  width: 1px;
+  height: 3rem;
+  background: #333139;
+}
+
+.table-bordered,
+.table td,
+.table th,
+.table thead th,
+.form-control {
+  border: 1px solid #333139;
+}
+
+.contact-form .form-control {
+  color: #737373;
+  resize: none;
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+  color: #737373;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #737373;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #737373;
+}
+
+.contact-form .form-control::placeholder {
+  color: #737373;
+}
+
+.select-wrapper::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 28%;
+  right: 3%;
+  color: inherit;
+  pointer-events: none;
+}
+
+.select-wrapper.nav-select-wrapper::after {
+  top: 22%;
+  right: 32%;
+}
+
+.select-wrapper .custom-select {
+  background-size: 0;
+  cursor: pointer;
+}
+
+/*Blog Section CSS*/
+.card .meta-list .icon {
+  color: #E4112F;
+  margin-right: 0.9rem;
+}
+
+/*FAQ's List & Items*/
+.faq-list .faq-item::before {
+  position: absolute;
+  -webkit-transform: translate(-155%, 30%);
+          transform: translate(-155%, 30%);
+  content: "";
+  padding: 0.75rem;
+  border-radius: 50%;
+  background: #E4112F;
+}
+
+.faq-list .faq-item .inner-faq-list {
+  counter-reset: number;
+  margin-left: 2rem;
+}
+
+.faq-list .faq-item .inner-faq-list .inner-faq-item::before {
+  counter-increment: number;
+  content: counter(number) ".";
+  position: absolute;
+  left: 0;
+}
+
+/*Navbar CSS*/
+.navbar .navbar-toggler {
+  outline: none;
+  font-size: 3rem;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+  -webkit-transform: translate(55%, 40%);
+          transform: translate(55%, 40%);
+  opacity: 0;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible !important;
+  -webkit-transform: translate(55%, -30%);
+          transform: translate(55%, -30%);
+}
+
+.navbar .nav-item .nav-link.active::after {
+  content: "‒";
+  position: absolute;
+  margin-left: 15px;
+}
+
+.navbar .nav-item .custom-select {
+  width: 9rem;
+}
+
+/*Footer CSS*/
+footer .list-group {
+  margin: 2rem 0;
+}
+
+footer .list-group .footer__link {
+  color: #7D7D7D;
+}
+
+.card .card-img {
+  width: 23rem;
+  height: 23rem;
+}
+
+.Subscribe {
+  padding: 4rem;
+}
+
+.Subscribe #subscribe-form input {
+  height: 5rem;
+  color: #7B7B7B;
+  border: 1px solid #333139;
+}
+
+.blockquote {
+  padding: 4rem 8rem;
+}
+
+.blockquote .quote-icon {
+  position: relative;
+}
+
+.blockquote .quote-icon::before, .blockquote .quote-icon::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #E4112F;
+}
+
+.blockquote .quote-icon::before {
+  content: "\f10d";
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-125%, -50%);
+          transform: translate(-125%, -50%);
+}
+
+.blockquote .quote-icon::after {
+  content: "\f10e";
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(100%, 25%);
+          transform: translate(100%, 25%);
+}
+
+.table {
+  min-width: 430px;
+}
+
+.card-deck:nth-of-type(1) .card:nth-child(1) {
+  background: #000000;
+}
+
+.card-deck:nth-of-type(1) .card:nth-child(2) {
+  background: #E4112F;
+}
+
+.card-deck:nth-of-type(1) .card:nth-child(4) {
+  background: #333139;
+}
+
+.card-deck:nth-of-type(2) .card:nth-child(1) {
+  background: #f0f0f0;
+}
+
+.card-deck:nth-of-type(2) .card:nth-child(3) {
+  background: #B0B0B0;
+}
+
+.card-deck:nth-of-type(2) .card:nth-child(4) {
+  background: #737373;
+}
+
+.card-deck .card {
+  padding-top: 12rem;
+}
+
+.category {
+  padding: 2rem;
+}
+
+.category .category__detail {
+  border-right: 1px solid #333139;
+}
+
+.category .category__detail .breadcrumb .breadcrumb-item {
+  color: #B0B0B0;
+}
+
+.category .category__detail .breadcrumb .breadcrumb-item .breadcrumb-link {
+  color: #B0B0B0;
+}
+
+.category .category__link {
+  color: #B0B0B0;
+  border: 1px solid #E4112F;
+  margin: 0 1rem 1rem 0;
+}
+
+.card .h1 {
+  line-height: 6rem;
+  margin: 3rem 0;
+}
+
+.card .faq-list .faq-item {
+  margin-bottom: 3.5rem;
+}
+
+.privecy-details .privecy__text {
+  max-width: 50rem;
+  color: #f0f0f0;
+}
+
+.privecy-details .faq-item p {
+  margin-bottom: 3.5rem;
+}
+/*# sourceMappingURL=style.css.map */

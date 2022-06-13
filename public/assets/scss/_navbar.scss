@@ -1,0 +1,34 @@
+/*Navbar CSS*/
+.navbar {
+    .navbar-toggler {
+        outline: none;
+        font-size: 3rem;
+    }
+
+    .nav-item {
+        &.dropdown {
+            .dropdown-menu {
+                transform: translate(55%, 40%);
+                opacity: 0;
+            }
+
+            &:hover {
+                .dropdown-menu {
+                    opacity: 1;
+                    visibility: visible !important;
+                    transform: translate(55%, -30%);
+                }
+            }
+        }
+
+        .nav-link.active::after {
+            content: "‒";
+            position: absolute;
+            margin-left: 15px;
+        }
+
+        .custom-select {
+            width: 9rem;
+        }
+    }
+}

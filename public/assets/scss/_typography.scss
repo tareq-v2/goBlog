@@ -1,0 +1,152 @@
+/*---Typography CSS---*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+//Font Family's
+body,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+h6,
+.custom-select,
+.nav-link,
+.theme-btn {
+    font-family: $primary-font;
+}
+
+p,
+.form-control,
+.label-text,
+.breadcrumb-item,
+.category__link,
+.blockquote-footer,
+.inner-faq-item,
+.h4.txt-style,
+.footer__link {
+    font-family: $secondary-font;
+}
+
+//Font Weight's
+body,
+p,
+.form-control {
+    font-weight: 400;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+h6,
+.meta-list,
+.quote-p,
+.custom-select,
+.nav-link,
+.theme-btn,
+.category__link,
+.blockquote-footer {
+    font-weight: 500;
+}
+
+//Letter Spacing
+.h2,
+.h3,
+.h1,
+.h4 {
+    letter-spacing: 0.08rem;
+}
+
+.nav-link,
+.theme-btn {
+    letter-spacing: 0.1rem;
+}
+
+//Font Size & Line Height
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.nav-item,
+.list-group-item {
+    line-height: 4rem;
+
+    .nav-link,
+    .custom-select {
+        font-size: 2rem;
+    }
+}
+
+.h2 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+}
+
+.h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+}
+
+.h3,
+.quote-p {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.quote-p,
+.blockquote-footer {
+    line-height: 3.4rem;
+}
+
+p,
+.inner-faq-item,
+.label-text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.form-control,
+.h6.txt-style {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+
+.theme-btn,
+.breadcrumb-item,
+.search__icon,
+.blockquote-footer,
+.h4 {
+    font-size: 1.8rem;
+}
+
+.footer__link,
+.meta-list {
+    font-size: 1.4rem;
+}
+
+.category__link {
+    font-size: 1.3rem;
+}
+
+.h4 {
+    line-height: 2.4rem;
+}
+
+.quote-icon::before,
+.quote-icon::after {
+    font-size: 3.5rem;
+}
